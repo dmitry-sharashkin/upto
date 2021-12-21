@@ -1,0 +1,81 @@
+@import "vars";
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.nav-list{
+	opacity: 1;
+	font-size: 13px;
+	letter-spacing: 0.07px;
+	display: flex;
+	align-items:center;
+	transition: opacity 0.3 linear;
+	.nav__link{
+		margin-right: 40px;
+		color: #30333a;
+		position:relative;
+
+		&:hover:after{
+			content: '';
+			display: inline-block;
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background-color: @blue;
+		}
+	}
+	.btn{
+		background-color: @blue;
+		border-radius: 5px;
+		width: 113px;
+		height: 46px;
+		border:none;
+		outline: none;
+		transition:
+		transform 0.2s linear;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		 a{
+		 	font-size: 13px;
+			color: #fff;
+		 }
+		&:active{
+			transform: translateY(1px);
+		}
+		&:hover{
+			cursor: pointer;
+			transform: translateY(-1px);
+		}
+	}
+}
+.burger__btn{
+	content: '';
+	display: none;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 0;
+	border: none;
+	color: inherit;
+	background-color: transparent;
+	&:focus{
+		border:none;
+		outline: none;
+	}
+
+	span{
+		content: '';
+		width: 30px;
+		height: 5px;
+		margin: 3px;
+		border-radius:2px;
+		background-color:@blue;
+		display: inline-block;
+	}
+}

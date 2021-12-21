@@ -1,0 +1,54 @@
+@import "vars";
+
+.about{
+	padding:150px 0;
+	display: flex;
+	justify-content: space-between;
+	flex: none;
+}
+
+.about-left{
+	width: 46%;
+}
+.about-right{
+	
+}
+.about__item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:35px;
+	&:hover .about-mark{
+		background: @blue;
+		.mark{
+			color:#fff;
+		}
+	}
+}
+.about-mark{
+	background: @blue-light;
+	width: 36px;
+	height: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: none;
+	border-radius: 15px 3px;
+	margin-right:42px;
+}
+.mark{
+	color: @blue;
+	font-size: 14px;
+}
+.about__title{
+	padding: 0;
+	margin: 0;
+	font-size: 32px;
+	font-weight: 500;
+	color: #30333a;
+	line-height: 1;
+}
+.about__txt{
+	font-size: 17px;
+	color: @light-gray;
+	font-family: Ubuntu;
+}

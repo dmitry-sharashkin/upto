@@ -1,0 +1,82 @@
+@import "vars";
+
+.footer{
+	max-width: 1368px;
+	background-color: #ecf2ff;
+	margin: 0 auto;
+	padding: 214px 0 55px;
+
+}
+.footer__wrap{
+	display: flex;
+	flex: none;
+	justify-content: space-between;
+	max-width: 908px;
+	margin: 0 auto;
+}
+.footer-nav__container{
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-nav__item{
+	font-size: 17px;
+	font-family: Ubuntu;
+	color: @light-gray;
+	font-weight: 400;
+
+	h5{
+		margin-bottom: 34px;
+		color: @gray;
+		font-weight: 500;
+		font-family: Poppins;
+		font-size: 18px;
+
+	}
+	ul{
+		padding:0;
+		margin: 0;
+		font-weight: inherit;
+		font-family: inherit;
+	}
+
+	li{
+		display: block;
+		font-size: 14px;
+		padding:0;
+		margin: 0;
+		font-family: inherit;
+		list-style: none;
+		margin-bottom: 18px;
+		a{
+			color: inherit;
+			text-decoration: none;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+
+	}
+}
+.footer-logo__wrap{
+	width: 16%;
+	p{
+		color: @light-gray;
+		font-family: Ubuntu;
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 27.2px;
+	}
+}
+.footer-autor{
+	margin-top: 80px;
+	color: #8c8c98;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23.38px;
+	.my__name{
+		font-weight: 500;
+		color: #171717;
+	}
+}

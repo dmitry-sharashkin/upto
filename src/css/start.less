@@ -1,0 +1,58 @@
+@import "vars";
+
+ .start{
+ 	margin: 0 auto;
+ 	max-width: 1070px;
+ 	height: 238px;
+ 	background-color: #5271ff;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	padding: 75px 75px 75px 110px;
+ 	box-sizing: border-box;
+ 	position: relative;
+ 	top: 100px;
+ }
+ .start__title{
+ 	color: #ffffff;
+	font-family: Poppins;
+	font-size: 42px;
+	font-weight: 500;
+ }
+ .start-contact{
+ 	display: flex;
+ 	align-items:center;
+ }
+ .start__mail{
+ 	a{
+ 		color: #fff;
+ 		&:hover{
+ 			cursor: pointer;
+ 		}
+ 	}
+ 	color: #ffffff;
+	font-family: Poppins;
+	font-size: 19px;
+	font-weight: 400;
+	margin-right: 77px;
+ }
+ .start__btn{
+ 	width: 175px;
+	height: 69px;
+	box-shadow: 0 18px 60px 10px  fade(#000DC4, 42%);
+	border-radius: 3px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	&:hover{
+		box-shadow: 0 18px 50px 10px  fade(#000DC4, 57%);
+	}
+	a{
+		color: @gray;
+		font-family: Poppins;
+		font-size: 17px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+ }
